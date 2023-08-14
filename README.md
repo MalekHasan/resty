@@ -8,3 +8,5 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
   
 [PR-URL](https://github.com/MalekHasan/resty/pulls)
+[CodeSandBox](https://codesandbox.io/p/github/MalekHasan/resty/draft/elegant-sky?file=/.codesandbox/tasks.json:1,1&workspaceId=52db850b-b45a-4058-8233-b6b85398f2bb)
+
