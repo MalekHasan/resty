@@ -9,17 +9,18 @@ import Footer from './components/footer/Footer';
 import Form from './components/form/Form';
 import Results from './components/results/Results';
 
-const App= (props)=>{
+const App= ()=>{
 const [data,setData]=useState(null)
 const [requestParams,setRequestParams]=useState({})
 
  const callApi = (requestParams) => {
     // mock output
     const data = {
-      count: 2,
+      count: 3,
       results: [
-        {name: 'fake thing 1', url: 'http://fakethings.com/1'},
-        {name: 'fake thing 2', url: 'http://fakethings.com/2'},
+        {name: 'fake thing 1', url:  requestParams.url ||'http://fakethings.com/1'},
+        {name: 'fake thing 2', url:  requestParams.url ||'http://fakethings.com/2'},
+        {result:requestParams.data}
       ],
     };
     setData(data)
