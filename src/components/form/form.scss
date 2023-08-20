@@ -9,6 +9,9 @@ form {
   label {
     display: flex;
     margin: 1rem 0;
+    .url-span{
+      padding-right: 5px;
+    }
 
     &.methods {
       span {

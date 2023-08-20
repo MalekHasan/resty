@@ -3,19 +3,16 @@ import './form.scss';
 
 const Form=(props)=> {
   const [method,setMethod]=useState("GET");
-  const [url,setUrl]=useState("https://api.themoviedb.org/3/trending/all/day?api_key=ba82abb3ab8be01aff0c5784084348e5");
+  const [url,setUrl]=useState("");
 
 
- const handleSubmit =async e => {
+ const handleSubmit = e => {
     e.preventDefault();
 
-    let res=await fetch(url,{method:method});
-    let data= await res.json();
-    console.log(data);
+    // console.log(data);
     const formData = {
       method:method,
       url: url,
-      data:data
     };
     props.handleApiCall(formData);
   }
@@ -24,7 +21,7 @@ const Form=(props)=> {
       <>
         <form onSubmit={handleSubmit}>
           <label >
-            <span>URL: </span>
+            <span className='url-span'>URL:</span> 
             <input name='url' type='text' onChange={(e)=>setUrl(e.target.value)} />
             <button type="submit">GO!</button>
           </label>
