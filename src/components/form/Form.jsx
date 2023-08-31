@@ -19,6 +19,13 @@ const Form=(props)=> {
 
     return (
       <>
+        <div>
+        Request Method:{" "}
+        <span className="boolean data-span">{method}</span>{" "}
+      </div>
+      <div>
+        URL: <span className="string data-span">{url}</span>
+      </div>
         <form onSubmit={handleSubmit}>
           <label >
             <span className='url-span'>URL:</span> 

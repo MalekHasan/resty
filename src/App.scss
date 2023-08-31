@@ -24,11 +24,40 @@ body {
   }
 
   header {
+    // position: fixed;
+    // left: 0;
+    // right: 0;
     background: darken($backgroundColor, 75);
     border-bottom: 1px solid #eee;
     color: #eee;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    h1{
+      position: absolute;
+      text-align: center;
+      // left: 50%;
+      transform: translateX(calc(50vw - 38px));
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+      color: #f5f5f5;
+      padding-left: 10px;
+      font-size: 18px;
+    }
+  }
+  form{
+    margin: 70px auto;
+  }
+  footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
